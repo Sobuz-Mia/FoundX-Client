@@ -1,9 +1,7 @@
-import { title } from "@/components/primitives";
-
 export default function AboutPage() {
   return (
     <div>
-      <h1 className={title()}>About</h1>
+      <h1>This is a about pages</h1>
     </div>
   );
 }
