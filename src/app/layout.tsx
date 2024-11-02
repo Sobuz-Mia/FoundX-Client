@@ -4,7 +4,7 @@ import clsx from "clsx";
 import { Providers } from "./providers";
 import { siteConfig } from "@/src/config/site";
 import { fontSans } from "@/src/config/fonts";
-import { Navbar } from "@/src/components/navbar";
+import { Navbar } from "@/src/components/ui/navbar";
 
 export const metadata: Metadata = {
   title: {
@@ -39,12 +39,7 @@ export default function RootLayout({
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          <div className="relative flex flex-col h-screen">
-            <Navbar />
-            <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
-              {children}
-            </main>
-          </div>
+          {children}
         </Providers>
       </body>
     </html>
